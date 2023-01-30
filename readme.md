@@ -1,0 +1,6 @@
+archivo env
+
+* AZP_URL
+* AZP_TOKEN
+* AZP_AGENT_NAME
+* AZP_POOL
