@@ -28,4 +28,14 @@ WORKDIR /azp
 COPY ./start.sh .
 RUN chmod +x start.sh
 
+RUN apt update && apt install -y python3 python3-pip
+RUN useradd -m -g users agent
+
+RUN chown -R agent:users  /azp
+
+USER agent
+
+
+
+
 ENTRYPOINT ["./start.sh"]

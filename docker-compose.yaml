@@ -1,6 +1,8 @@
+
+version : "3.2"
 services:
-  agent:
-    image: lgdiazf/agente-azure-gpu:0.0.2
+  agente:
+    build : .
     command: "./start.sh"
     env_file:
       - az.env
